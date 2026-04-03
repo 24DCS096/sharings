@@ -1,8 +1,5 @@
-function loadFromDB() {
-  fetch("GetVideo")
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById("ytPlayer").src =
-        "https://www.youtube.com/embed/" + data.id;
-    });
+function loadVideo() {
+  const id = "TCE-4UzrEGw";
+  document.querySelector("iframe").src =
+    "https://www.youtube.com/embed/" + id;
 }
