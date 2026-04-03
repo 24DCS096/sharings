@@ -1,9 +1,6 @@
-const video = document.getElementById("myVideo");
+function loadVideo() {
+  const id = document.getElementById("videoId").value;
+  const player = document.getElementById("ytPlayer");
 
-function playVideo() {
-  video.play();
-}
-
-function pauseVideo() {
-  video.pause();
+  player.src = "https://www.youtube.com/embed/" + id;
 }
