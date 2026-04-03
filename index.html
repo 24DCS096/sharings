@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Video Player</title>
+  <title>YouTube Video Player</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>My Video</h2>
+<h1>YouTube Player</h1>
 
-<video id="myVideo" controls>
-  <source src="videos/sample.mp4" type="video/mp4">
-  Your browser does not support video.
-</video>
+<div class="video-container">
+  <iframe id="ytPlayer"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
 
-<br><br>
+<br>
 
-<button onclick="playVideo()">Play</button>
-<button onclick="pauseVideo()">Pause</button>
+<input type="text" id="videoId" placeholder="Enter YouTube Video ID">
+<button onclick="loadVideo()">Load Video</button>
 
 <script src="script.js"></script>
 
