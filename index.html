@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Video Example</title>
+  <title>Video App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>My Video</h2>
+<h1>Video Player</h1>
 
-<video width="600" controls>
-  <source src="video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+<video id="videoPlayer" controls>
+  <source id="videoSource" src="" type="video/mp4">
 </video>
+
+<br>
+<button onclick="loadVideo()">Load Video</button>
+
+<script src="script.js"></script>
 
 </body>
 </html>
