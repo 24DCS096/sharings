@@ -1,92 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sharing App</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            background: #f0f2f5;
-            text-align: center;
-        }
-
-        h1 {
-            background: #4CAF50;
-            color: white;
-            padding: 15px;
-        }
-
-        .container {
-            width: 350px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        input, select, button {
-            width: 90%;
-            padding: 8px;
-            margin: 5px;
-        }
-
-        button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-        }
-
-        video {
-            margin-top: 20px;
-            width: 100%;
-            border-radius: 10px;
-        }
-    </style>
+  <title>Video Example</title>
 </head>
-
 <body>
 
-<h1>Sharing App</h1>
+<h2>My Video</h2>
 
-<div class="container">
-
-    <h2>Add Contact</h2>
-    <form>
-        <input type="text" placeholder="Username"><br>
-        <input type="email" placeholder="Email"><br>
-        <button>Add Contact</button>
-    </form>
-
-    <h2>Add Item</h2>
-    <form>
-        <input type="text" placeholder="Item Name"><br>
-        <input type="text" placeholder="Width"><br>
-        <input type="text" placeholder="Height"><br>
-        <input type="text" placeholder="Length"><br>
-
-        <select>
-            <option>Available</option>
-            <option>Borrowed</option>
-        </select><br>
-
-        <input type="text" placeholder="Borrower"><br>
-        <button>Save Item</button>
-    </form>
-
-    <h2>Items</h2>
-    <ul>
-        <li>Book - Available</li>
-        <li>Laptop - Borrowed</li>
-    </ul>
-
-    <!-- 🎥 VIDEO SECTION -->
-    <h2>App Demo Video</h2>
-    <video controls>
-        <source src="demo.mp4" type="video/mp4">
-        Your browser does not support video.
-    </video>
-
-</div>
+<video width="600" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 </body>
 </html>
