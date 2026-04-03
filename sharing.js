@@ -11,4 +11,10 @@
   function pauseVideo() {
     video.pause();
   }
+
+fetch("getVideo.php")
+  .then(res => res.json())
+  .then(data => {
+    document.querySelector("video source").src = data.video_url;
+  });
 </script>
