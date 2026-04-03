@@ -1,12 +1,8 @@
-CREATE DATABASE video_db;
-
-USE video_db;
-
-CREATE TABLE videos (
+CREATE TABLE youtube_videos (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(100),
-  video_url VARCHAR(255)
+  video_id VARCHAR(50)
 );
 
-INSERT INTO videos (title, video_url)
-VALUES ('Demo Video', 'videos/sample.mp4');
+INSERT INTO youtube_videos (title, video_id)
+VALUES ('My Video', 'TCE-4UzrEGw');
