@@ -1,5 +1,6 @@
 function loadVideo() {
-  const id = "TCE-4UzrEGw";
-  document.querySelector("iframe").src =
-    "https://www.youtube.com/embed/" + id;
+  const id = document.getElementById("videoId").value;
+  const player = document.getElementById("ytPlayer");
+
+  player.src = "https://www.youtube.com/embed/" + id;
 }
